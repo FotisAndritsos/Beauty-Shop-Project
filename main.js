@@ -2,11 +2,20 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const head = document.getElementById('head');
 const nav = document.getElementById('nav');
 const overlay = document.querySelector('.overlay');
+const searchBtn = document.querySelector('.search');
+const searchContainer = document.querySelector('.search-container');
+const searchSvg = document.querySelector('.search-svg');
 
 hamburgerMenu.addEventListener('click',()=>{
     head.classList.toggle("active");
 })
-
+searchBtn.addEventListener('click',()=>{
+  searchContainer.classList.add("yo");
+  searchSvg.addEventListener('click',() =>{
+    searchContainer.classList.remove("yo");
+    head.classList.remove('active');
+  })
+})
 // SLIDER
 
 var slideIndex = 0;
