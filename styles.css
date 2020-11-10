@@ -1,13 +1,16 @@
+/* GENERAL */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 10px;
+    font-family: 'Poppins' , sans-serif;
+}
 body{
     width: 100%;
     height: 100%;
-    font-size: 10px;
-    font-family: 'Poppins' , sans-serif;
     background-color: rgb(212, 145, 145);
 }
 
@@ -18,28 +21,39 @@ a{
 ul{
     list-style: none;
 }
+/* HEADER */
 header{
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 8px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    height: 70px;
     z-index: 997;
+    transition: 0.3s all ease-in-out;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+  }
+.logo{
+    letter-spacing: 1.5px;
+    font-size:3rem;
+    font-weight: 500;
 }
 .logo a{
     color: white;
-    letter-spacing: 1.5px;
-    font-size:2.5rem;
-    font-weight: 400;
 }
 .logo span{
     color: red;
     text-transform: uppercase;
 }
+/* HAMBURGER MENU */
 .hamburger-menu{
     width: 35px;
     height: 30px;
@@ -57,6 +71,7 @@ header{
     width: 100%;
     height: 3px;
     background-color: white;
+    border-radius: 4px;
     transition: all 0.3s ease-in-out;
 } 
 .active .top-bar{
@@ -70,6 +85,7 @@ header{
 .active .center-bar{
     opacity: 0;
 }
+/* NAV */
 nav{
     width: 350px;
     height: 100vh;
@@ -125,6 +141,7 @@ nav{
 .icons a:hover{
     color: red;
 }
+/* OVERLAY */
 .overlay{
     width: 100%;
     height: 100vh;
@@ -132,7 +149,7 @@ nav{
     top: 0;
     left: 0;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 998;
     display:none;
 }
@@ -140,54 +157,36 @@ nav{
     display:block;
 }
 
-/* hero */
-.hero{
+/* SLIDER */
+.slider{
     position: absolute;
     top: 0;
     left: 0;
 }
-.slideshow-container {
+.slider-container {
     width: 100%;
     position: relative;
     margin: auto;
   }
+
   .mySlides img{
       width: 100%;
       height: 100vh;
       object-fit: cover;
   }
-  /* Hide the images by default */
   .mySlides {
     display: none;
+    position: relative;
   }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
+  .mySlides::before{
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-   
+    content: "";
+    width: 100%;
+    height:100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
   
   /* Fading animation */
   .fade {
@@ -206,6 +205,45 @@ nav{
     from {opacity: .4}
     to {opacity: 1}
   }
+  /* SLIDER INNER */
+
+  
+.slider-inner{
+    /* background-color: red; */
+    /* width: 50%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.slider-h{
+    color: white;
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.slider-p{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+}
+.btn-slider{
+    background-color: red;
+    color: white;
+    margin-top: 3rem;
+    transition: 0.5s transform ease;
+}
+.btn-slider:hover{
+    transform: scale(1.1);
+}
   .yo{
       width: 100%;
       height: 1200px;

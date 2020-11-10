@@ -7,23 +7,36 @@ hamburgerMenu.addEventListener('click',()=>{
     head.classList.toggle("active");
 })
 
+// SLIDER
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+const showSlides = () => {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
+showSlides();
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+
+// STICKY NAV
+
+window.addEventListener('scroll',()=>{
+  stickyNav();
+})
+const sticky = head.offsetTop;
+
+const stickyNav = () =>{
+  if (window.pageYOffset > sticky) {
+    head.classList.add("sticky")
+  } else{
+    head.classList.remove("sticky");
   }
-  slides[slideIndex-1].style.display = "block";
 }
