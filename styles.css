@@ -7,13 +7,13 @@
 html{
     font-size: 10px;
     font-family: 'Poppins' , sans-serif;
+    /* font-family: 'Libre Baskerville',serif; */
 }
 body{
     width: 100%;
     height: 100%;
     background-color: black;
     position: relative;
-    /* overflow: hidden; */
 }
 
 a{
@@ -23,10 +23,13 @@ a{
 ul{
     list-style: none;
 }
+h1,h2,h3,h4,h5{
+    font-family: 'Libre Baskerville',serif;
+}
 /* HEADER */
 header{
     width: 100%;
-    height: 100%;
+    height: 70px;
     position: absolute;
     top: 0;
     left: 0;
@@ -34,7 +37,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
     z-index: 997;
     transition: 0.3s all ease-in-out;
 }
@@ -47,7 +49,7 @@ header{
 .logo{
     letter-spacing: 1.5px;
     font-size:3rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 .logo a{
     color: white;
@@ -67,14 +69,13 @@ header{
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 999;
     transition: all 0.3s ease;
 }
 .bars{
     width: 100%;
     height: 3px;
     background-color: white;
-    border-radius: 4px;
     transition: all 0.3s ease-in-out;
 } 
 .active .top-bar{
@@ -120,10 +121,12 @@ nav{
 }
 .nav-link{
     display: block;
+    font-family: 'Libre Baskerville',serif;
     padding: 20px 0px;
     width: 100%;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
     transition: all 0.5s ease;
 } 
 .nav-link:hover{
@@ -131,14 +134,14 @@ nav{
 }
 .icons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
 .icons a{
     display: inline-block;
-    font-size: 1.3rem;
-    margin: 0 10px;
+    font-size: 1.6rem;
+    margin: 0 16px;
     color: white;
     transition: all 0.3s ease;
 }
@@ -148,12 +151,12 @@ nav{
 /* OVERLAY */
 .overlay{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgb(221, 13, 13);
+    opacity: 0.2;
     z-index: 998;
     display:none;
 }
@@ -163,9 +166,7 @@ nav{
 
 /* SLIDER */
 .slider{
-    position: absolute;
-    top: 0;
-    left: 0;
+   
 }
 .slider-container {
     width: 100%;
@@ -189,7 +190,7 @@ nav{
     height:100vh;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
 }
   
   /* Fading animation */
@@ -213,8 +214,6 @@ nav{
 
   
 .slider-inner{
-    /* background-color: red; */
-    /* width: 50%; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -223,7 +222,7 @@ nav{
 }
 .slider-h{
     color: white;
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 1.2;
     font-weight: 600;
 }
@@ -235,15 +234,17 @@ nav{
 }
 .btn{
     display: inline-block;
-    border-radius: 4px;
     padding: 1.2rem 2rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .btn-slider{
     background-color: red;
     color: white;
     margin-top: 3rem;
-    transition: 0.5s transform ease;
+    transition: 0.3s transform ease-in-out;
 }
 .btn-slider:hover{
     transform: scale(1.1);
@@ -264,14 +265,68 @@ nav{
     transform: scale(0);
     visibility: hidden;
     transition: 0.6s all ease;
-     z-index: 997;
+     z-index: 1000;
 }
 .yo.search-container{
     transform: scale(1);
     visibility:visible;
 }
-form{
-    display: inline-block;
+.form{
+    width: 50%;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 3rem;
+}
+
+.label-search{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid white;
+}
+.label-search::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    width: 100%;
+    height: 0;
+    border-bottom: 4px solid red;
+    transition:0.5s transform ease;
+    transform: translateX(-100%);
+}
+.search-content{
+    font-family: 'Libre Baskerville',serif;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    color: white;
+    font-size: 4rem;
+    transition: all 0.3s ease;
+}
+.form input:focus + .label-search::after,
+.form input:valid + .label-search::after {
+    transform: translateX(0);
+}
+.form input:focus + .label-search .search-content,
+.form input:valid + .label-search .search-content {
+    transform: translateY(-150%);
+    font-size: 4rem;
+    color: red;
 }
 
 svg{
@@ -280,8 +335,103 @@ svg{
     top: 20px;
     right: 25px;
     cursor: pointer;
+    transition: 0.3s all ease;
 }
-  .niarf{
+svg:hover{
+    fill:red;
+}
+
+.btn-form{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+.btn-form i{
+    color: white;
+    font-size: 2rem;
+}
+.form input:focus ~ .btn-form  i,
+.form input:valid ~ .btn-form  i {
+    color: red;
+}
+  /* CATEGORIES */
+.categories-container{
+      position: relative;
+      max-width: 1200px;
       width: 100%;
-      height: 1200px;
-  } 
+      padding: 5rem 2rem;
+      margin: auto;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      /* overflow: hidden; */
+} 
+.category:hover .label {
+    opacity: 1;
+    transform: translateY(0);
+}
+.category:hover .btn-general {
+    opacity: 1;
+    transform: translateY(0);
+}
+.category{
+    flex: 1;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    padding:2rem;
+    min-height: 350px;
+    position: relative;
+    cursor: pointer;
+}
+.one{
+    background: url(/images/diana-ruseva-1cHnHtuNAcc-unsplash.jpg)center no-repeat;
+    background-size: cover;
+}
+
+.two{
+    background: url(/images/laura-chouette-mOn_6hI06DI-unsplash.jpg)center no-repeat;
+    background-size: cover;
+}
+.three{
+    background: url(/images/laura-chouette-mOn_6hI06DI-unsplash.jpg)center no-repeat;
+    background-size: cover;
+}
+.four{
+    background: url(/images/jess-harper-sunday-pFNj9p_m534-unsplash.jpg)center no-repeat;
+    background-size: cover;
+}
+.label{
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+    color: white;
+    background-color:rgba(71, 29, 29, 0.4);
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    transform: translateY(20px);
+    /* visibility: hidden; */
+}
+.btn-general{
+    background-color: red;
+    color: white;
+    opacity: 0;
+    transition: 0.6s all ease-in-out;
+    transform: translateY(-40px);
+}
