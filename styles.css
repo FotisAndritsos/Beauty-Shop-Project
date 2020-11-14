@@ -138,6 +138,22 @@ nav{
 .icons a:hover{
     color: red;
 }
+.cart{
+    position: relative;
+    display: inline-block;
+}
+.cart-value{
+    color: white;
+    font-size: 1rem;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    background-color: red;
+    border-radius: 100%;
+}
+
 
 /* SLIDER */
 .slider{
@@ -345,7 +361,6 @@ svg:hover{
       margin: 3rem auto;
       align-items: center;
       display: flex;
-      flex: 1;
       justify-content: center;
       flex-wrap: wrap;
       gap: 25px;
@@ -359,7 +374,7 @@ svg:hover{
     transform: translateY(0);
 }
 .category{
-    min-width: 250px;
+    min-width: 270px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -398,7 +413,7 @@ svg:hover{
     letter-spacing: 1px;
     padding: 2rem 0;
     color: white;
-    background-color:rgba(71, 29, 29, 0.4);
+    background-color:rgba(71, 29, 29, 0.6);
     opacity: 0;
     transition: 0.3s all ease-in-out;
     transform: translateY(20px);
@@ -592,21 +607,17 @@ section{
 }
 
  .gav{
+    position: relative;
     width: 270px;
     height: 320px;
     cursor: pointer;
     margin: auto;
     overflow: hidden;
-    
-}
-.gav:hover img{
-    transform: scale(1.1);
-}
+ }
 .owl-carousel .gav img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s transform ease;
 }
 .owl-dots{
     text-align: center;
@@ -618,8 +629,8 @@ section{
 }
 .owl-dot{
     background-color: white!important;
-    width: 15px !important;
-    height: 15px !important;
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 100%;
     margin: 5px;
     outline: none;
@@ -632,4 +643,105 @@ section{
     padding: 10px;
     font-size: 3rem;
     text-align: center;
+}
+.carousel-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(71, 29, 29, 0.6);
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: 0.5s all ease-in-out;
+}
+.gav:hover .carousel-main{
+    transform: scale(1);
+}
+.cart-right{
+    transform: translateX(150%);
+    transition: 0.8s all ease-in;
+}
+.gav:hover .cart-right,.gav:hover .cart-left{
+    transform: translateX(0);
+}
+.cart-left{
+    margin-right: 35px;
+    transform: translateX(-150%);
+    transition: 0.8s all ease-in;
+}
+.cart-right i,.cart-left i{
+    color: white;
+    font-size: 2rem;
+}
+
+/* FOOTER  */
+footer{
+    padding: 3rem 3rem 0rem;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.top-footer{
+    font-family: 'Libre Baskerville',serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid grey;
+}
+.column-1,.column-2,.column-3,.column-4{
+    flex: 1;
+}
+.column-1 .logo{
+    margin-bottom: 2rem;
+}
+.column-1 ul,.column-2 ul,.column-3 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.column-1 ul li,.column-2 ul li,.column-3 ul li{
+    margin-bottom: 1rem;
+}
+.column-1 ul li a,.column-2 ul li a,.column-3 ul li a {
+    color: white;
+    /* text-transform: uppercase; */
+    font-size: 1.3rem;
+}
+.column-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.column-4 ul{
+    flex: 1;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.column-4 ul li{
+    margin-right: 20px;
+}
+.column-4 ul li a{
+    font-size: 1.6rem;
+    color: white;
+}
+.column-4 p{
+    flex: 1;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+}
+.down-footer{
+    padding: 2rem 0;
+    text-align: center;
+    color: grey;
 }
