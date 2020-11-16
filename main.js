@@ -10,9 +10,9 @@ hamburgerMenu.addEventListener('click',()=>{
     head.classList.toggle("active");
 })
 searchBtn.addEventListener('click',()=>{
-  searchContainer.classList.add("yo");
+  searchContainer.classList.add("active");
   searchSvg.addEventListener('click',() =>{
-    searchContainer.classList.remove("yo");
+    searchContainer.classList.remove("active");
     head.classList.remove('active');
   })
 })
