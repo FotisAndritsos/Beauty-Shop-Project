@@ -551,6 +551,7 @@ section{
      font-size: 2.2rem;
      width: 100%;
      text-align: center;
+     font-weight: 200;
  }
  .owl-img{
      position: relative;
@@ -567,6 +568,7 @@ section{
      margin-top: 12px;
  }
  .owl-price p:nth-child(2){
+     font-weight: 700;
     color: red;
 }
 .owl-img img{
@@ -975,10 +977,9 @@ table img{
     text-transform: uppercase;
     font-size: 1.3rem;
     font-weight: 600;
-    /* border: 1px solid white; */
 }
 
-/* LOGIN */
+/* REGISTER */
 .form-content{
     max-width: 1400px;
     padding: 0 25px;
@@ -1035,7 +1036,7 @@ table img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .check-cont label{
     font-size: 1.2rem;
@@ -1047,8 +1048,39 @@ table img{
     width: 15px;
     height: 15px;
     margin: 0 0.5rem 0 0;
+}
+.terms{
     color: red;
 }
-.form-info .terms{
+.form-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+.cancelbtn,.signupbtn{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    background-color: red;
+    color: white;
+}
+.orlog{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+.orlog a{
     color: red;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* LOGIN */
+.signin{
+    margin-top: 1rem;
 }
