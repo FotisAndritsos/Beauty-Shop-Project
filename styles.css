@@ -340,10 +340,9 @@ svg:hover{
 .btn{
     display: inline-block;
     padding: 1.2rem 2rem;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 600;
     letter-spacing: 1px;
-    text-transform: uppercase;
     background-color: red;
     color: white;
 }
@@ -969,8 +968,8 @@ table img{
     background-color: red;
     color: white;
     padding: 10px 15px;
-    text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
     font-weight: 600;
 }
 
@@ -1059,6 +1058,7 @@ table img{
     font-size: 1.6rem;
     font-weight: 600;
     padding: 1rem 3rem;
+    letter-spacing: 1px;
     background-color: red;
     color: white;
 }
@@ -1256,4 +1256,89 @@ table img{
 .btn-filter{
     width: 60%;
     text-align: center;
+}
+
+/* CONTACT  */
+
+.contact-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-contact-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-contact-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+.form-contact-container form input{
+    width: 80%;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    margin-bottom: 3rem;
+}
+.form-contact-container form label{
+    display: block;
+    width: 80%;
+    text-align: start;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+.form-contact-container form textarea{
+    width: 80%;
+    height: 150px;
+    margin-bottom: 4rem;
+}
+.form-contact-container h2{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.info-contact-container{
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 3rem;
+}
+.info-contact{
+    padding:3.5rem;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-contact i{
+    color: red;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.info-contact h3{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.info-contact p{
+    color: white;
+    font-size: 1.2rem;
 }
