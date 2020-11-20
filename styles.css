@@ -1420,3 +1420,146 @@ table img{
 .pagination a:hover{
     color: grey;
 }
+
+/* PRODUCT DETAILS  */
+
+.product-details{
+    max-width: 1400px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.detail-images{
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.big-pic{
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.big-pic img{
+    min-width:100% ;
+}
+.gallery{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sml-img{
+    width: 24%;
+    cursor: pointer;
+}
+.sml-img img{
+    max-width: 100%;
+}
+.detail-info{
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.detail-info h2{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.ratings-cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+.ratings{
+    margin-right: 1rem;
+}
+.ratings .fa {
+    font-size: 1.3rem;
+    color: white;
+}
+.ratings-cont .p-rev{
+    color: white;
+    font-size: 1.5rem;
+}
+.ratings-cont .p-rev:hover{
+    color:red;
+    text-decoration: underline;
+}  
+.ratings .checked {
+    color: orange;
+}
+.detail-info h3{
+    color: red;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.detail-info .p-desc{
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.val-cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+}
+.val-container .dec,.val-container .inc{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.product-extra{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 2rem;
+}
+.extra-left,.extra-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.extra-left p,.extra-right p{
+    width: 100%;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.extra-left p{
+    font-weight: bold;
+}
+.extra-right span{
+    color: red;
+}
+.extra-social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.extra-social i{
+    font-size: 1.4rem;
+    margin-right: 2rem;
+}
+.extra-social a{
+    padding: 0.5rem 0;
+    color: white;
+    transition: 0.3s all ease;
+}
+.extra-social a:hover{
+    color: red;
+}
