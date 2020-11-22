@@ -8,6 +8,19 @@ const searchSvg = document.querySelector('.search-svg');
 const valBtn = document.querySelectorAll('.valbtn');
 let valOrder = document.querySelectorAll('.value-order');
 let cartValue = document.querySelector('.cart-value');
+const delCartItem = document.querySelectorAll('.del-cart-item');
+
+
+
+// DELETE ITEM CART 
+delCartItem.forEach(del => {
+  del.addEventListener("click", e => {
+    let x = e.target;
+    y = x.parentElement.closest("tr");
+    y.style.display= "none";
+  })
+})
+
 
 // PRODUCT VALUES-CART 
 
@@ -24,6 +37,9 @@ valBtn.forEach(btn =>{
   }else return;
   })
 })
+
+
+
 // HAMBURGER MENU 
 hamburgerMenu.addEventListener('click',()=>{
     head.classList.toggle("active");

@@ -392,16 +392,16 @@ svg:hover{
     cursor: pointer;
 }
 .one{
-    background: url(images/diana-ruseva-1cHnHtuNAcc-unsplash.jpg)center no-repeat;
+    background: url(images/9.jpg)center no-repeat;
     background-size: cover;
 }
 
 .two{
-    background: url(images/laura-chouette-mOn_6hI06DI-unsplash.jpg)center no-repeat;
+    background: url(images/11.jpg)center no-repeat;
     background-size: cover;
 }
 .three{
-    background: url(images/laura-chouette-mOn_6hI06DI-unsplash.jpg)center no-repeat;
+    background: url(images/7.jpg)center no-repeat;
     background-size: cover;
 }
 .four{
@@ -858,6 +858,7 @@ td:nth-child(3),td:nth-child(5){
 table img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .yolo{
     width: 200px;
@@ -971,6 +972,9 @@ table img{
     font-size: 1.6rem;
     letter-spacing: 1px;
     font-weight: 600;
+}
+.del-cart-item{
+    cursor: pointer;
 }
 
 /* REGISTER */
@@ -1178,8 +1182,6 @@ table img{
     flex-direction: column;
     align-items: flex-start;
     justify-content:flex-start;
-    /* background-color: red; */
-    /* padding: 2rem 1rem; */
 }
 .filter-container h2{
     color: white;
