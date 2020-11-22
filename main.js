@@ -5,10 +5,31 @@ const overlay = document.querySelector('.overlay');
 const searchBtn = document.querySelector('.search');
 const searchContainer = document.querySelector('.search-container');
 const searchSvg = document.querySelector('.search-svg');
+const valBtn = document.querySelectorAll('.valbtn');
+let valOrder = document.querySelectorAll('.value-order');
+let cartValue = document.querySelector('.cart-value');
 
+// PRODUCT VALUES-CART 
+
+valBtn.forEach(btn =>{ 
+  btn.addEventListener("click",e => {
+  let x = e.target;
+  y=x.parentElement.children[1];
+  z=y.value;
+  if (x.classList.contains("inc")){
+  z=y.value++;
+  cartValue.innerHTML = z+1 ;
+  }else if(x.classList.contains("dec") && z>1){
+    z=y.value--; cartValue.innerHTML = z-1 ;
+  }else return;
+  })
+})
+// HAMBURGER MENU 
 hamburgerMenu.addEventListener('click',()=>{
     head.classList.toggle("active");
 })
+
+// SEARCH BUTTON 
 searchBtn.addEventListener('click',()=>{
   searchContainer.classList.add("active");
   searchSvg.addEventListener('click',() =>{
@@ -16,9 +37,10 @@ searchBtn.addEventListener('click',()=>{
     head.classList.remove('active');
   })
 })
+
 // SLIDER
 
-var slideIndex = 0;
+let slideIndex = 0;
 
 const showSlides = () => {
   let i;
@@ -50,6 +72,8 @@ const stickyNav = () =>{
   }
 }
 
+
+// OWL CAROUSEL 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
 });
@@ -71,6 +95,5 @@ $('.owl-carousel').owlCarousel({
           items:4
       }
   }
-})
-
+});
 
