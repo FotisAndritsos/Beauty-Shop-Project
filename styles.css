@@ -696,103 +696,6 @@ footer a:hover{
     text-align: center;
     color: grey;
 }
-
-@media only screen and (max-width: 768px) {
-    
-    .hamburger-menu{
-        width: 35px;
-        height: 30px;
-        position: absolute;
-        top: 20px;
-        right: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        cursor: pointer;
-        z-index: 999;
-        transition: all 0.3s ease;
-    }
-    .navbar{
-        width: 100%;
-        position: relative;
-    }
-    nav{
-        width: 350px;
-        height: 100vh;
-        background-color: black;
-        position: fixed;
-        top: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        transform: translateX(100%);
-        transition: all 0.8s ease;
-        z-index: 998;
-    }
-    .active #nav{
-        transform: translateX(0);
-    }
-    .nav-list{
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .nav-item{
-        width: 100%;
-    }
-    .nav-link{
-        display: block;
-        font-family: 'Libre Baskerville',serif;
-        padding: 20px 0px;
-        width: 100%;
-        color: white;
-        font-size: 1.7rem;
-        text-transform: uppercase;
-        transition: all 0.5s ease;
-    } 
-    .nav-link:hover{
-        color: red;
-    }
-    .icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .icons a{
-        display: inline-block;
-        font-size: 1.6rem;
-        margin: 0 16px;
-        color: white;
-        transition: all 0.3s ease;
-    }
-    .icons a:hover{
-        color: red;
-    }
-    .overlay{
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: red;
-        opacity: 0.5;
-        z-index: 998;
-        display:none;
-    }
-    .active .overlay {
-        display:block;
-    }
-    .container{
-        flex-direction: column;
-        row-gap: 5rem;
-    }
-} 
-
     /* CART  */
 
 .pic-container{
@@ -1441,12 +1344,15 @@ table img{
     align-items: center;
 }
 .big-pic{
-    max-width: 100%;
+    width: 100%;
+    height: 450px;
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
 .big-pic img{
-    min-width:100% ;
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
 }
 .gallery{
     width: 100%;
@@ -1456,10 +1362,13 @@ table img{
 }
 .sml-img{
     width: 24%;
+    height: 200px;
     cursor: pointer;
 }
 .sml-img img{
     max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .detail-info{
     flex: 1;
@@ -1565,3 +1474,100 @@ table img{
 .extra-social a:hover{
     color: red;
 }
+
+
+@media only screen and (max-width: 768px) {
+    
+    .hamburger-menu{
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+    .navbar{
+        width: 100%;
+        position: relative;
+    }
+    nav{
+        width: 350px;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: all 0.8s ease;
+        z-index: 998;
+    }
+    .active #nav{
+        transform: translateX(0);
+    }
+    .nav-list{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-item{
+        width: 100%;
+    }
+    .nav-link{
+        display: block;
+        font-family: 'Libre Baskerville',serif;
+        padding: 20px 0px;
+        width: 100%;
+        color: white;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    } 
+    .nav-link:hover{
+        color: red;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .icons a{
+        display: inline-block;
+        font-size: 1.6rem;
+        margin: 0 16px;
+        color: white;
+        transition: all 0.3s ease;
+    }
+    .icons a:hover{
+        color: red;
+    }
+    .overlay{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: red;
+        opacity: 0.5;
+        z-index: 998;
+        display:none;
+    }
+    .active .overlay {
+        display:block;
+    }
+    .container{
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+} 

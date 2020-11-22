@@ -9,8 +9,16 @@ const valBtn = document.querySelectorAll('.valbtn');
 let valOrder = document.querySelectorAll('.value-order');
 let cartValue = document.querySelector('.cart-value');
 const delCartItem = document.querySelectorAll('.del-cart-item');
+const smallPic= document.querySelectorAll('.sml-img img');
+const bigPic= document.querySelector('.big-pic img');
 
-
+smallPic.forEach(pic =>{
+  pic.addEventListener("click",e =>{
+    let tar = e.target.src;
+    bigPic.src = tar;
+    console.log(tar);
+  })
+})
 
 // DELETE ITEM CART 
 delCartItem.forEach(del => {
