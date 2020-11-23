@@ -1570,4 +1570,133 @@ table img{
         flex-direction: column;
         row-gap: 5rem;
     }
+    .slider-inner{
+        width: 100%;
+    }
+    .slider-h {
+    color: white;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 600;
+    }
+    .slider-p{
+    font-size: 1.4rem;
+    }
+    .btn{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+    .img-left img{
+        width: 100%;
+    }
+    .action-right h2{
+        font-size: 3rem;
+    }
+    .action-right p{
+        font-size:1.4rem;
+    }
+    .filter-container{
+        width: 50%;
+    }
+    .products{
+        width: 50%;
+    }
+    .product-cont{
+        width: 100%;
+    }
+    .blog-item{
+        width: 70%;
+    }
+    .contact-container{
+        flex-direction:column;
+    }
+    .form-contact-container{
+        width: 85%;
+        margin-bottom: 3rem;
+    }
+    .pic-container{
+        height: 280px;
+    }
+    .total-btn{
+        flex-direction: column;
+    }
+    .total-btn a{
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    .coupon{
+        width: 50%;
+    }
+    .total{
+        width: 50%;
+    }
+    .container-form{
+        width:85%
+    }
+    .product-details{
+        flex-direction: column;
+    }
 } 
+@media only screen and (max-width: 400px){
+    .category{
+        width: 100%;
+    }
+    .owl-it{
+        width: 100%;
+    }
+    .products-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .products{
+        width: 100%;
+    }
+    .blog-item{
+        width: 100%;
+    }
+    .form-contact-container{
+        width: 100%;
+    }
+    .info-contact-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .info-contact{
+        width: 100%;
+    }
+    .map-site{
+        padding: 0 2.5rem;
+        margin: 1.5rem auto;
+    }
+    .total-container{
+        flex-direction: column;
+    }
+    .coupon{
+        width: 100%;
+    }
+    .total{
+        width: 100%;
+    }
+    footer{
+        padding: 0 3rem;
+    }
+    .top-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0  0 3rem 0;
+    }
+    .column-1, .column-2, .column-3, .column-4{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    nav{
+        width: 250px;
+    }
+}
