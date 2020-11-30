@@ -61,7 +61,7 @@ header{
     font-weight: 400;
 }
 .logo span{
-    color: red;
+    color: #9900cc;
     text-transform: uppercase;
 }
 /* HAMBURGER MENU */
@@ -78,12 +78,12 @@ header{
 } 
 .active .top-bar{
     transform: rotateZ(-45deg) translate(-8px,6px);
-    background-color: red;
+    background-color: #9900cc;
     
 }
 .active .bottom-bar{
     transform: rotateZ(45deg) translate(-8px,-6px);
-    background-color: red;
+    background-color: #9900cc;
 }
 .active .center-bar{
     opacity: 0;
@@ -122,7 +122,7 @@ nav{
     transition: all 0.3s ease-in;
 } 
 .nav-link:hover{
-    color: red;
+    color: #9900cc;
 }
 .icons{
     display: flex;
@@ -138,7 +138,7 @@ nav{
     transition: all 0.3s ease-in;
 }
 .icons a:hover{
-    color: red;
+    color: #9900cc;
 }
 .cart{
     position: relative;
@@ -151,7 +151,7 @@ nav{
     position: absolute;
     top: -5px;
     right: -15px;
-    background-color: red;
+    background-color: #9900cc;
     border-radius: 100%;
 }
 
@@ -210,7 +210,7 @@ nav{
     left: 0px;
     width: 100%;
     height: 0;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #9900cc;
     transition:0.5s transform ease;
     transform: translateX(-100%);
 }
@@ -231,7 +231,7 @@ nav{
 .form input:valid + .label-search .search-content {
     transform: translateY(-150%);
     font-size: 4rem;
-    color: red;
+    color: #9900cc;
 }
 
 svg{
@@ -243,7 +243,7 @@ svg{
     transition: 0.3s all ease;
 }
 svg:hover{
-    fill:red;
+    fill:#9900cc;
 }
 
 .btn-form{
@@ -265,7 +265,7 @@ svg:hover{
 
 .form input:focus ~ .btn-form  i,
 .form input:valid ~ .btn-form  i {
-    color: red;
+    color: #9900cc;
 }
 
 /* SLIDER */
@@ -343,11 +343,11 @@ svg:hover{
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 1px;
-    background-color: red;
+    background-color: #9900cc;
     color: white;
 }
 .btn-slider{
-    background-color: red;
+    background-color: #9900cc;
     color: white;
     margin-top: 3rem;
     transition: 0.3s transform ease-in-out;
@@ -460,8 +460,8 @@ section{
     padding: 50px 20px 80px;
     margin-left: 6rem;
     color: white;
-    border-top: 1px solid red;
-    border-right: 1px solid red;
+    border-top: 1px solid #9900cc;
+    border-right: 1px solid #9900cc;
     text-align: center;
 }
 .action-right h2{
@@ -474,7 +474,7 @@ section{
     margin-top:20px
 }
 .btn-section{
-    color: red;
+    color: #9900cc;
     font-weight: 600;
     background-color: white;
     position: absolute;
@@ -483,7 +483,7 @@ section{
     transition: 0.3s all ease;
 }
 .btn-section:hover{
-    background-color: red;
+    background-color: #9900cc;
     color: white;
 }
 .img-left h3{
@@ -493,7 +493,7 @@ section{
     padding: 8px;
     color: white;
     font-size: 3rem;
-    background-color: red;
+    background-color: #9900cc;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -563,7 +563,7 @@ section{
  }
  .owl-price p:nth-child(2){
      font-weight: 700;
-    color: red;
+    color: #9900cc;
 }
 .owl-img img{
     width: 100%;
@@ -588,13 +588,13 @@ section{
     outline: none;
 }
 .owl-dot.active{
-    background-color: red!important;
+    background-color: #9900cc!important;
 }
 .carousel-main{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: #9900cc;
     opacity: 0.9;
     width: 100%;
     height: 100%;
@@ -639,7 +639,7 @@ footer a{
     transition: 0.3s all ease-in;
 }
 footer a:hover{
-    color:red;
+    color:#9900cc;
 }
 .top-footer{
     font-family: 'Libre Baskerville',serif;
@@ -756,7 +756,7 @@ th{
     border-bottom: 1px solid grey;
 }
 td:nth-child(3),td:nth-child(5){
-    color: red;
+    color: #9900cc;
 }
 table img{
     width: 100%;
@@ -827,7 +827,7 @@ table img{
     flex: 1;
     outline: none;
     border: none;
-    background-color:red;
+    background-color:#9900cc;
     color: white;
     padding: 11px;
     font-size: 1.5rem;
@@ -869,7 +869,7 @@ table img{
 }
 .total-btn a{
     display: inline-block;
-    background-color: red;
+    background-color: #9900cc;
     color: white;
     padding: 10px 15px;
     font-size: 1.6rem;
@@ -951,7 +951,7 @@ table img{
     margin: 0 0.5rem 0 0;
 }
 .terms{
-    color: red;
+    color: #9900cc;
 }
 .form-btns{
     width: 100%;
@@ -966,7 +966,7 @@ table img{
     font-weight: 600;
     padding: 1rem 3rem;
     letter-spacing: 1px;
-    background-color: red;
+    background-color: #9900cc;
     color: white;
 }
 .orlog{
@@ -976,7 +976,7 @@ table img{
     margin-top: 2rem;
 }
 .orlog a{
-    color: red;
+    color:#9900cc;
     text-decoration: underline;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1047,7 +1047,7 @@ table img{
  }
  .product-price p:nth-child(2){
      font-weight: 700;
-    color: red;
+     color: #9900cc;
 }
 .product-img img{
     width: 100%;
@@ -1058,7 +1058,7 @@ table img{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: #9900cc;
     opacity: 0.9;
     width: 100%;
     height: 100%;
@@ -1101,7 +1101,7 @@ table img{
     transition: 0.3s all ease;
 }
 .categories a:hover{
-    color: red;
+    color: #9900cc;
 }
 .categories li{
     margin-bottom: 0.8rem;
@@ -1131,7 +1131,7 @@ table img{
     background-color: white;
 }
 .brand-item label input:checked ~ span{
-    background-color: red;
+    background-color: #9900cc;
 }
 .checkmark:after{
     position: absolute;
@@ -1234,7 +1234,7 @@ table img{
     align-items: center;
 }
 .info-contact i{
-    color: red;
+    color: #9900cc;
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -1320,7 +1320,7 @@ table img{
     transition: 0.3s all ease;
 }
 .pagination .active{
-    background-color: red;
+    background-color: #9900cc;
 }
 .pagination a:hover{
     color: grey;
@@ -1402,14 +1402,14 @@ table img{
     font-size: 1.5rem;
 }
 .ratings-cont .p-rev:hover{
-    color:red;
+    color:#9900cc;
     text-decoration: underline;
 }  
 .ratings .checked {
     color: orange;
 }
 .detail-info h3{
-    color: red;
+    color: #9900cc;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
 }
@@ -1454,7 +1454,7 @@ table img{
     font-weight: bold;
 }
 .extra-right span{
-    color: red;
+    color: #9900cc;
 }
 .extra-social{
     width: 100%;
@@ -1472,7 +1472,7 @@ table img{
     transition: 0.3s all ease;
 }
 .extra-social a:hover{
-    color: red;
+    color: #9900cc;
 }
 
 
@@ -1534,7 +1534,7 @@ table img{
         transition: all 0.5s ease;
     } 
     .nav-link:hover{
-        color: red;
+        color: #9900cc;
     }
     .icons{
         display: flex;
@@ -1550,7 +1550,7 @@ table img{
         transition: all 0.3s ease;
     }
     .icons a:hover{
-        color: red;
+        color: #9900cc;
     }
     .overlay{
         width: 100%;
@@ -1558,7 +1558,7 @@ table img{
         position: fixed;
         top: 0;
         left: 0;
-        background-color: red;
+        background-color: #9900cc;
         opacity: 0.5;
         z-index: 998;
         display:none;
