@@ -138,7 +138,7 @@ nav{
     transition: all 0.3s ease-in;
 }
 .icons a:hover{
-    color: #9900cc;
+    color: red;
 }
 .cart{
     position: relative;
@@ -151,7 +151,7 @@ nav{
     position: absolute;
     top: -5px;
     right: -15px;
-    background-color: #9900cc;
+    background-color: red;
     border-radius: 100%;
 }
 
@@ -483,7 +483,7 @@ section{
     transition: 0.3s all ease;
 }
 .btn-section:hover{
-    background-color: #9900cc;
+    background-color: red;
     color: white;
 }
 .img-left h3{
@@ -493,7 +493,7 @@ section{
     padding: 8px;
     color: white;
     font-size: 3rem;
-    background-color: #9900cc;
+    background-color:red;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -639,7 +639,7 @@ footer a{
     transition: 0.3s all ease-in;
 }
 footer a:hover{
-    color:#9900cc;
+    color:red;
 }
 .top-footer{
     font-family: 'Libre Baskerville',serif;
